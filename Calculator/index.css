@@ -1,0 +1,25 @@
+.container{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+table{
+    margin: auto;
+    background-color: aqua;
+}
+
+button{
+    background-color: azure;
+    width: 59px;
+    height: 40px;
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+    margin-top: 15px;
+    height: 30px;
+}
+.calculator{
+    display: inline-block;
+}

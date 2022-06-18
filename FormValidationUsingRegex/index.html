@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regex form validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-3">
+        <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success! </strong> Your form has been submitted successfully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <div id="failureAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Fail! </strong> Please enter a valid detail.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <h1>Welcome to iMovies booking desk</h1>
+        <form class="row g-3">
+            <div class="col-md-12">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+                <small class="invalid-feedback">Name must start with a capital letter followed by atleat 2 words and cannot be greater than 20 characters</small>
+            </div>
+            <div class="col-md-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputEmail">
+                <small class="invalid-feedback">Please enter a valid email</small>
+            </div>
+            <div class="col-md-12">
+                <label for="inputContact" class="form-label">Contact no.</label>
+                <input type="text" class="form-control" id="inputContact">
+                <small class="invalid-feedback">Phone no must be of 10 digits</small>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <textarea class="form-control" id="inputAddress" rows="6"></textarea>
+            </div>
+
+
+            <div class="col-md-12">
+                <label for="inputMovieType" class="form-label">Category</label>
+                <select id="inputMovieType" class="form-select">
+                    <option selected>Action</option>
+                    <option>Comedy</option>
+                    <option>Science</option>
+                    <option>Fiction</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Any suggestion</label>
+                <textarea class="form-control" id="inputAddress" rows="4"></textarea>
+            </div>
+
+
+            <div class="col-12">
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

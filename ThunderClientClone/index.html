@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our custom thunderclient</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="my-4">Welcome to thunderRequest API</h1>
+        <!-- url input -->
+        <div class="input-group  mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Url</span>
+            <input type="text" class="form-control" id="url" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <!-- Request Type -->
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button">Request Type</button>
+            <select class="form-select" id="inputGroupSelect03" aria-label="method" name="Request-Type">
+                <option value="Get">Get</option>
+                <option value="Post">Post</option>
+            </select>
+        </div>
+                
+        <!-- Content Type -->
+        <div class="mb-3">
+            <h6>Content Type</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="contentType" id="jsonContent" value="json" checked>
+                <label class="form-check-label" for="jsonContent">
+                    JSON
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="contentType" id="customContent" value="customparam">
+                <label class="form-check-label" for="customContent">
+                    Custom Parameters
+                </label>
+            </div>
+        </div>
+        <!-- Parameter Box -->
+        <div id="paraBox">
+            <div class="row">
+                <div class="col-md-1">
+                    <h6>Parameters</h6>
+                </div>
+                <div class="col-md-3 mb-2 ">
+                    <input type="text" class="form-control" id="keyParam" placeholder="Key" aria-label="Key" name="key">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="valueParam" placeholder="Value" aria-label="Value" name="value">
+                </div>
+                <div class="col-md-2 " id="addParam">
+                    <button class="btn btn-primary btn-sm ">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- Added parameters -->
+        <div id="addedParams">
+
+        </div>
+        <!-- Json Input box -->
+        <div class=" my-3" id="jsonInptBox">
+            <label for="jsonInpt" class="form-label">
+                <h6>Enter your json input here</h6>
+            </label>
+            <textarea class="form-control" id="jsonInpt" rows="5" placeholder="write your json"></textarea>
+        </div>
+        <!-- Submit your input -->
+        <div>
+            <button class="btn btn-primary mt-2" id="submit">Submit</button>
+        </div>
+            
+        <!-- Response box -->
+        <div class=" mt-5">
+            <label for="response" class="form-label">
+                <h6>Response output</h6>
+            </label>
+            <textarea class="form-control" id="responseOpt" rows="10"
+                placeholder="Your response will be here..."></textarea>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
